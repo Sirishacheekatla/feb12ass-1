@@ -1,0 +1,40 @@
+
+b=80
+f=50
+n=100
+i=150
+w=200
+cname=input('enter customer name')
+cphnno=int(input('enter customer phnno'))
+bp=int(input('enter no.of chocolate packets'))
+fr=int(input('enter no.of fruits'))
+np=int(input('enter no.of nut packets'))
+ic=int(input('enter no.of ice creams'))
+wb=int(input('enter no.of water bottles'))
+bill=(b*bp)+(f*fr)+(n*np)+(i*ic)+(w*wb)
+if bill>=5000:
+     dis=bill*10/100
+     tax=bill*10/100
+elif bill>=3000:
+     dis=bill*8/100
+     tax=bill*10/100
+elif bill>=2000:
+     dis=bill*5/100
+     tax=bill*15/100
+elif bill>=1000:
+     dis=bill*3/100
+     tax=bill*18/100
+else:
+    dis=0
+    tax=bill*18/100
+mainbill=bill-dis+tax
+print('bill amount',mainbill )
+Output:
+enter customer name sirisha
+enter customer phno 7981829340
+enter no.of.chocolate packets8
+enter no.of fruits9
+enter no.of nut packets 7
+enter no.of ice creams 9
+enter no.of water bottles 6
+bill amount 4426.8
